@@ -1,0 +1,13 @@
+#real-alert {
+    color: deeppink;
+}
+
+#test-only {
+    color: mediumpurple;
+}
+
+/*each link should be designed to look distinct from each other*/
+
+.missile-link {
+    display: block;
+}

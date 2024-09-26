@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bootstrap Forms</title>
+</head>
+
+<body>
+
+<form>
+
+<label for="user-name">Enter your name:</label>
+
+<!-- The simplest input possible -->
+<input id="user-name" type="text"> <br><br>
+
+<label>Human?</label> <input type="checkbox"> <br><br>
+
+<br>
+<br>
+
+<input type="text" value="candace">
+
+<input type="number" value="100">
+
+
+
+<br>
+<br>
+
+<!-- Input color below -->
+<input type="color">
+<!-- Input = no closing tag,
+except for text area, so you can describe the box. -->
+
+<br>
+<br>
+
+<textarea rows="20" cols="50">Text box info goes here.</textarea>
+
+<br>
+<br>
+
+<!-- Drop down list below -->
+
+<label>How many numbers?</label>
+<select>
+  <option>One</option>
+  <option>Two</option>
+  <option>Three</option>
+</select>
+<br>
+<br>
+
+<label>Delivery or Carry-out?</label>
+<input name="method" type="radio" checked>Delivery
+<input name="method" type="radio">Carry-out
+<br>
+<br>
+
+<label>Now or Later?</label>
+<input id="delivery-now" name="delivery-time" type="radio" checked>
+<label for="delivery-now">Now</label>
+<input id="delivery-later" name="delivery-time" type="radio">
+<label for="delivery-later">Later</label>
+<br>
+<br>
+
+<input type="submit">
+
+</form>
+
+
+</body>
+</html>
