@@ -1,0 +1,18 @@
+body {
+    background-color: #bce7c1;
+    font-family: 'Roboto Slab', serif;
+}
+
+.header {
+    font-family: "Dela Gothic One", sans-serif;
+    color: darkolivegreen;
+    text-align: left;
+}
+
+h5 {
+    font-family: "Dela Gothic One", sans-serif;
+}
+
+form {
+    border-radius: 5px;
+}

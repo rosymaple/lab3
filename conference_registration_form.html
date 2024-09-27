@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Pacifico&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- adding my own stylesheet after bootstrap links -->
+
+    <link href="registration-styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="m-3">
+
+<!-- specify body element margins -->
+
+<!-- display header class to my own liking using bootstrap -->
+
+  <div class="header .bg-success.bg-gradient mb-4 p-4 rounded-1 text-left">
+    <h1>Fill in the form below to register for our annual ITEC conference!</h1>
+  </div>
+
+<!-- i want to display my form with instructions using columns and rows-->
+  <div class="row">
+
+    <!-- registration form instructions formatted using bootstrap,
+    this instructions column will occupy 7 columns out of 12 on the webpage.-->
+    <div class="col-md-7 p-4">
+      <h5>ITEC Conference Form</h5>
+      <p>Please fill out each section of the registration form.</p>
+      <p>We need all the information we can get from you!!!!!!!!!!</p>
+      <p>If you don't show up, all of your teachers will be mad at you.</p>
+    </div>
+
+    <!-- our form element will occupy 5 out of 12 columns on the webpage-->
+    <div class="col-md-4 p-4 rounded-5 bg-light" style="--bs-bg-opacity: .50;">
+      <form>
+      <!-- format form using bootstrap with classes, ID, and names,
+      and to show the browser how each input and label correspond. -->
+
+        <label class="form-label" for="name">First and Last Name</label>
+        <input class="form-control" id="name" name="name" required>
+        <br>
+
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control" type="password" id="password" name="password" required>
+        <br>
+
+        <label for="email">Email</label>
+        <input class="form-control" id="email" type="email" name="email" required>
+        <br>
+
+        <label for="tshirt">T-shirt Size</label>
+        <select class="form-control" id="tshirt" name="tshirt" required>
+          <option value="">Select size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <br>
+
+        <label for="date-of-birth">Date of Birth</label>
+        <input class="form-control" type="date" id="date-of-birth" name="date-of-birth" required>
+        <br>
+
+        <p class="mx-2">Would you like to receive email updates?</p>
+
+        <div class="form-check">
+          <input class="form-check-input" id="yes" type="radio" name="email-updates">
+          <label class="form-check-label" for="yes">Yes</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" id="no" type="radio" name="email-updates">
+          <label class="form-check-label" for="no">No</label>
+        </div>
+        <br>
+
+        <label>Morning or Afternoon Session? Choose at least one and up to two.</label>
+        <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="morning" name="sessions" value="morning">
+          <label class="form-check-label" for="morning">Morning</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="afternoon" name="sessions" value="afternoon">
+          <label class="form-check-label" for="afternoon">Afternoon</label>
+        </div>
+        <br>
+
+        <label for="requests">Special Requests? (Optional)</label>
+        <textarea class="form-control" id="requests" name="requests"></textarea>
+
+        <input class="btn btn-dark" type="submit">
+
+      </form>
+    </div>
+
+</body>
+<!-- end of body element -->
+
+</html>
+<!-- end of html file -->
